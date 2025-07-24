@@ -24,26 +24,39 @@
 </head>
 <body>
     <header>
-        <nav class="flex flex-row justify-between items-center ">
-            <img src="./assets/logo.png" alt="Logo">
-            <ul class="flex">
-                <div class="hidden lg:flex">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">About us</a></li>
+        <nav class="flex flex-row justify-between items-center mx-4 mt-[13px] lg:mt-[30px] lg:mx-[150px]">
+            <a href="">
+                <img src="./assets/logo.png" alt="Logo" class="w-[63px] h-[38px] lg:w-[135px] lg:h-[82px]">
+            </a>
+            <ul class="flex lg:gap-12">
+                <div class="hidden lg:flex lg:gap-12">
+                    <li class="text-[#8987A1] text-base hover:scale-r-110 hover:text-[#252432] hover:font-bold"><a href="index.html">Home</a></li>
+                    <li class="text-[#8987A1] text-base hover:scale-r-110 hover:text-[#252432] hover:font-bold"><a href="">Shop</a></li>
+                    <li class="text-[#8987A1] text-base hover:scale-r-110 hover:text-[#252432] hover:font-bold"><a href="">About us</a></li>
                 </div>
                 <li>
-                    <div class="cart flex items-center">
+                    <a href="" class="cart flex items-center gap-2.5">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <p class=".inter-font">Cart ($56)</p>
-                    </div>
+                        <p class=".inter-font text-base text-black hover:scale-r-110 hover:text-[#252432] hover:font-bold">Cart ($56)</p>
+                    </a>
                 </li>
             </ul>
-            
         </nav>
     </header>
     <main>
-
+        <!-- Banner Section -->
+        <section class="lg:flex lg:flex-row-reverse lg:justify-between lg:items-end lg:mx-[150px] lg:my-[120px] lg:gap-0">
+            <img src="./assets/hero-flower.png" alt="Banner Image" class="mt-7 w-full lg:max-w-[570px]">
+            <div class="mx-4 mt-7">
+                <h3 class="noto-serif-font font-bold text-2xl mb-[13px] lg:text-[65px]">
+                    ALWAYS <span class="text-[#E95A08]">FRESH</span><br>
+                    <span class="text-[#E95A08]">FLOWERS</span>
+                </h3>
+                <p class="inter-font text-[14px] text-[#000000]/50 lg:text-[22px]">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+                </p>
+            </div>
+        </section>
     </main>
     <footer>
 
