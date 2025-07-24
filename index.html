@@ -35,12 +35,17 @@
                     <li class="inter-font text-[#8987A1] text-base hover:scale-110 hover:text-[#252432] hover:font-bold duration-100"><a href="">About us</a></li>
                 </div>
                 <li>
-                    <a href="" class="cart flex items-center gap-2.5">
+                    <a href="" onclick="cart()" class="cart flex items-center gap-2.5 hover:scale-110 duration-100">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <p class=".inter-font text-base text-black hover:scale-110 hover:text-[#252432] hover:font-bold duration-100">Cart ($56)</p>
+                        <p class=".inter-font text-base text-black hover:text-[#252432] hover:font-bold">Cart ($56)</p>
                     </a>
                 </li>
             </ul>
+            <script>
+                function cart(){
+                    alert("Flower Added to Cart");
+                }
+            </script>
         </nav>
     </header>
     <main>
@@ -154,7 +159,8 @@
             lg:flex lg:flex-row lg:justify-between lg:items-center lg:max-w-[1140px] lg:mx-auto lg:gap-[60px]">
                 <div class="relative">
                     <img src="./assets/flower-store.png" alt="Flower Store Photo" class="w-[360px] mx-auto lg:w-[540px]">
-                    <img src="./assets/trusted-badge.png" alt="Trusted Badge" class=" hidden lg:block lg:bg-transparent lg:absolute lg:top-[-127px] lg:right-[-95px] lg:w-[286px] lg:ml-[497px]">
+                    <img src="./assets/trusted-badge.png" alt="Trusted Badge" class=" hidden lg:block lg:bg-transparent lg:absolute lg:top-[-127px] lg:right-[-95px] lg:w-[286px] lg:ml-[497px]
+                    cursor-pointer hover:animate-spin">
                 </div>    
                 <div class="text w-[360px] mx-auto lg:w-[540px]">
                     <h3 class="noto-serif-font font-bold text-2xl text-left mb-[13px] lg:text-[50px]">
